@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kumpulan proyek web karya Zafira Paras.">
+  <title>Karya dan Proyek | Portofolio Zafira Paras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header-situs">
+    <div class="wadah header-isi">
+      <a class="logo" href="index.html">Zafira<span>.</span>Paras</a>
+      <button class="tombol-menu" id="tombol-menu" type="button" aria-expanded="false"
+        aria-controls="menu-utama">Menu</button>
+      <nav class="navigasi" id="menu-utama" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="katalog.html" aria-current="page">Karya</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="bagian" aria-labelledby="judul-katalog">
+      <div class="wadah">
+        <div class="judul-bagian">
+          <span class="label-kecil">Portofolio</span>
+          <h1 id="judul-katalog">Karya dan proyek</h1>
+          <p>Tiga proyek web yang pernah saya kerjakan, mulai dari website pertama saya.</p>
+        </div>
+
+        <div class="grid-katalog" id="daftar-katalog">
+          <article class="kartu">
+            <div class="kartu-gambar">
+              <img src="img/hello.world.png" width="600" height="400" loading="lazy"
+                alt="Ilustrasi halaman web sederhana dengan tulisan Hello World">
+            </div>
+            <div class="kartu-isi">
+              <span class="kategori">Web</span>
+              <h2 class="judul-kartu">Website Pertama: Hello World</h2>
+              <p>Halaman web pertama saya yang menampilkan tulisan Hello World sebagai langkah awal belajar HTML.</p>
+              <div class="kartu-meta"><span>2026</span><span>HTML</span></div>
+            </div>
+          </article>
+          <article class="kartu">
+            <div class="kartu-gambar">
+              <img src="img/kalkulator..png" width="600" height="400" loading="lazy"
+                alt="Ilustrasi kalkulator dengan layar angka dan tombol operasi hitung">
+            </div>
+            <div class="kartu-isi">
+              <span class="kategori">Web</span>
+              <h2 class="judul-kartu">Kalkulator Sederhana</h2>
+              <p>Kalkulator berbasis web untuk operasi tambah, kurang, kali, dan bagi.</p>
+              <div class="kartu-meta"><span>2026</span><span>HTML, CSS, JavaScript</span></div>
+            </div>
+          </article>
+          <article class="kartu">
+            <div class="kartu-gambar">
+              <img src="img/tabel.mahasiswa.png" width="600" height="400" loading="lazy"
+                alt="Ilustrasi tabel data mahasiswa dengan kolom nama, NIM, dan jurusan">
+            </div>
+            <div class="kartu-isi">
+              <span class="kategori">Web</span>
+              <h2 class="judul-kartu">Tabel Mahasiswa</h2>
+              <p>Halaman yang menampilkan data mahasiswa dalam bentuk tabel yang rapi dan mudah dibaca.</p>
+              <div class="kartu-meta"><span>2026</span><span>HTML, CSS</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-situs">
+    <div class="wadah footer-isi">
+      <p>&copy; 2026 Zafira Paras. Dibuat dengan HTML dan CSS.</p>
+      <ul class="footer-sosial">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

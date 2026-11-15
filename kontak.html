@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hubungi Zafira Paras untuk kolaborasi proyek web dan desain.">
+  <title>Kontak | Portofolio Zafira Paras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header-situs">
+    <div class="wadah header-isi">
+      <a class="logo" href="index.html">Zafira<span>.</span>Paras</a>
+      <button class="tombol-menu" id="tombol-menu" type="button" aria-expanded="false"
+        aria-controls="menu-utama">Menu</button>
+      <nav class="navigasi" id="menu-utama" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="katalog.html">Karya</a></li>
+          <li><a href="kontak.html" aria-current="page">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="bagian" aria-labelledby="judul-kontak">
+      <div class="wadah">
+        <div class="judul-bagian">
+          <span class="label-kecil">Kontak</span>
+          <h1 id="judul-kontak">Mari berdiskusi</h1>
+          <p>Punya ide proyek, pertanyaan, atau ingin berkolaborasi? Kirim pesan lewat formulir di bawah atau hubungi
+            saya lewat kanal berikut.</p>
+        </div>
+
+        <div class="kontak-grid">
+          <div>
+            <article class="panel">
+              <h2>Informasi kontak</h2>
+              <ul class="daftar-kontak">
+                <li><strong>Alamat:</strong> Indonesia (tersedia kerja jarak jauh)</li>
+                <li><strong>Email:</strong> <a href="mailto:zafira.paras@example.com">zafira.paras@example.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/">github.com/zafiraparas</a></li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/">@zafira.paras</a></li>
+              </ul>
+            </article>
+
+            <div class="peta">
+              <iframe title="Peta lokasi Indonesia" src="https://www.google.com/maps?q=Indonesia&amp;output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div>
+            <form class="formulir" id="form-kontak" action="kontak.html" method="get">
+              <h2>Kirim pesan</h2>
+
+              <div class="kolom">
+                <label for="nama">Nama lengkap</label>
+                <input type="text" id="nama" name="nama" required minlength="3" maxlength="60" autocomplete="name"
+                  aria-describedby="error-nama">
+                <p class="pesan-error" id="error-nama"></p>
+              </div>
+
+              <div class="kolom">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email"
+                  aria-describedby="error-email">
+                <p class="pesan-error" id="error-email"></p>
+              </div>
+
+              <div class="kolom">
+                <label for="hp">Nomor HP</label>
+                <input type="tel" id="hp" name="hp" required pattern="[0-9]{10,13}"
+                  title="Isi 10 sampai 13 digit angka, tanpa spasi atau tanda hubung" autocomplete="tel"
+                  aria-describedby="petunjuk-hp error-hp">
+                <p class="petunjuk" id="petunjuk-hp">Hanya angka, 10 sampai 13 digit.</p>
+                <p class="pesan-error" id="error-hp"></p>
+              </div>
+
+              <div class="kolom">
+                <label for="keperluan">Keperluan</label>
+                <select id="keperluan" name="keperluan" required aria-describedby="error-keperluan">
+                  <option value="">Pilih keperluan</option>
+                  <option value="proyek-web">Proyek website</option>
+                  <option value="desain-ui">Desain UI</option>
+                  <option value="kolaborasi">Ajakan kolaborasi</option>
+                  <option value="lainnya">Lainnya</option>
+                </select>
+                <p class="pesan-error" id="error-keperluan"></p>
+              </div>
+
+              <div class="kolom">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" required minlength="10" maxlength="500"
+                  aria-describedby="petunjuk-pesan error-pesan"></textarea>
+                <p class="petunjuk" id="petunjuk-pesan">Minimal 10 dan maksimal 500 karakter.</p>
+                <p class="pesan-error" id="error-pesan"></p>
+              </div>
+
+              <button class="tombol tombol-utama" type="submit">Kirim pesan</button>
+              <p class="pesan-sukses" id="pesan-sukses" role="status" hidden></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bagian bagian-gelap" aria-labelledby="judul-jam">
+      <div class="wadah">
+        <div class="judul-bagian">
+          <h2 id="judul-jam">Jam ketersediaan</h2>
+          <p>Waktu terbaik untuk menghubungi saya di luar jadwal kuliah dan jika saya mood.</p>
+        </div>
+        <div class="bungkus-tabel">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-situs">
+    <div class="wadah footer-isi">
+      <p>&copy; 2026 Zafira Paras. Dibuat dengan HTML dan CSS.</p>
+      <ul class="footer-sosial">
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
